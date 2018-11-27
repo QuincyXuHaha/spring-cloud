@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: @artifactId@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #2个false表明这是一个注册中心服务器
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+server:
+  port: 8761
