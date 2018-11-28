@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author quinc
  * @date 2018/11/28 星期三
  */
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi", fallback = HystricFallbackServiceImpl.class)
 public interface ScheduleHiService {
 
     /**
