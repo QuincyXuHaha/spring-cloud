@@ -6,4 +6,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:8761/eureka/ #注册中心地址
+      defaultZone: http://peer1:8761/eureka/, http://peer2:8769/eureka/ #注册中心地址
