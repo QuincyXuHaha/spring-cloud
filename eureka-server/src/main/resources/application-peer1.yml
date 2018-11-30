@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: @artifactId@
+  profiles:
+    active: peer1
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8769/eureka/
+server:
+  port: 8761
