@@ -18,6 +18,7 @@
         <module>service-feign</module>
         <module>service-zuul</module>
         <module>config-center</module>
+        <module>sleuth-zipkin</module>
     </modules>
 
     <parent>
